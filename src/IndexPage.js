@@ -1,4 +1,7 @@
 import NavButton from './NavButton';
+import {Link} from "react-router-dom";
+
+
 
 function IndexPage() {
   return (
@@ -19,7 +22,9 @@ function IndexPage() {
           </p>
       </div>
 
-    <NavButton/>
+    <Link to="/projects">
+    <NavButton location="bottom" label="Projects"/>
+    </Link>
     </>);
 }
 
