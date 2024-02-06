@@ -11,7 +11,6 @@ function ProjectDisplay({ project }) {
   } = project;
 
   return (
-    <div>
   <div className="project-display-area">
     <h1>{name}</h1>
     <p>{description}</p>
@@ -20,16 +19,6 @@ function ProjectDisplay({ project }) {
     <br/>
     <a href={demo_link}>Live demo</a>
   </div>
-
-<Link to="/">
-  <NavButton location="top" label="Home"/>
-</Link>
-
-<Link to="/about-me">
-  <NavButton location="right" label="About me"/>
-</Link>
-
-    </div>
   );
 }
 

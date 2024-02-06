@@ -3,30 +3,25 @@ function NavButton({ location, label }) {
 
   const style = {
     position: 'absolute',
-    height: '10vh',
-  }
+    height: '15vh',
+    width: "15vw"
 
-  const labelStyle = {
-    position: 'absolute',
-    left: '50vw'
   }
-  
-  style[location] = '12vh';
 
   if (location === "top" || location === "bottom") {
     style.left = "45.8vw";
-  } else [
-    style.top = "45.8vw"
-  ]
+  } else {
+    style.top = "45.8vh";
+  }
 
-
-  labelStyle[location] = '15vh';
+  style[location] = "5vh"
 
   return (
   <>
-  <h4 style={labelStyle}>{label}</h4>
-  <img src="up-arrow.png" style={style}></img>
-
+  <div style={style}>
+  <h4>{label}</h4>
+  <img src="up-arrow.png" ></img>
+  </div>
   </>
   );
 }
