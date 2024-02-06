@@ -1,4 +1,4 @@
-import './App.css';
+import './index.css';
 import IndexPage from './IndexPage';
 import React from "react";
 import { BrowserRouter, Route, Routes, Navigate } from "react-router-dom";

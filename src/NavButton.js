@@ -4,15 +4,21 @@ function NavButton({ location, label }) {
   const style = {
     position: 'absolute',
     height: '10vh',
-    left: '45.8vw',
   }
-
-  style[location] = '5vh';
 
   const labelStyle = {
     position: 'absolute',
     left: '50vw'
   }
+  
+  style[location] = '12vh';
+
+  if (location === "top" || location === "bottom") {
+    style.left = "45.8vw";
+  } else [
+    style.top = "45.8vw"
+  ]
+
 
   labelStyle[location] = '15vh';
 
